@@ -9,6 +9,14 @@ comments: true
 * content
 {:toc}
 
+介绍了Kafak和Zookeeper命令行的使用
+
+
+
+
+
+
+
 ## 集群配置：
 
 `--zookeeper master106:2181,node110:2181,node210:2181`
