@@ -6,6 +6,7 @@ category: 分布式系统
 tags: zookeeper kafka
 comments: true
 ---
+* content
 {:toc}
 
 ## 集群配置：
@@ -175,3 +176,7 @@ kafka-server-start.sh ../config/server.properties &
 []
 [zk: 127.0.0.1:2181(CONNECTED) 9]
 ```
+
+----
+
+> 作者[@luoxuehuan](http://luoxuehuan.github.io/)更多文章：[个人网站](http://luoxuehuan.github.io/) `|` [CSDN](http://blog.csdn.net/lxhandlbb/) `|` [oschina](http://my.oschina.net/brianway)
