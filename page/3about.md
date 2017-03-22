@@ -12,13 +12,11 @@ icon: heart
 ## 关于我
 
 
-> 2017年我就要找工作了，希望做服务器端研发相关方向
 
-在校硕士研究生一枚，就读于华中科技大学电子信息与通信学院，2015级学硕(三年)   
 
+大数据工程师一枚，主要技能Spark,Hadoop,Scala，就职于一家专注于大数据服务的创业公司——[数澜科技](www.dtwave.com)。
 爱技术，爱吹逼，热爱生活。
 
-最喜欢的游戏是《炉石传说》，天梯传说+竞技场12胜，[武汉高校星联赛季军](http://7xsna4.com2.z0.glb.clouddn.com/heartstone-prize.png)
 
 ---
 
@@ -43,17 +41,23 @@ icon: heart
 
 这个博客主要用于记录一个菜鸟的成长之路
 
-2016.12.29 | 读完了《深入理解 Java 虚拟机》，《架构探险》，《大型网站技术架构》；刷完了牛客网[《算法精品课》](https://www.nowcoder.com/courses/1)；读了部分 Elasticsearch 官方文档；完成了个人爬虫项目 [webporter](https://github.com/brianway/webporter)，荣登 Github 单日 trending 总榜第七名和 Java 榜第一名；[知乎爬虫分析博文](http://brianway.github.io/2016/12/20/webporter-zhihu-user-analysis/)登上了几个网站的头条
-2016.10.30 | 读完了《图解http》，《敏捷软件开发》，《Head First 设计模式》，《Java 并发编程实战》；二刷 Coursera 上普林斯顿的“算法 Part I”，完成所有编程作业并获得 98.4%（[成绩单](http://7xph6d.com1.z0.glb.clouddn.com/%E9%9A%8F%E7%AC%94_part-I-total.png)）；阅读了部分[《Elasticsearch: The Definitive Guide》](https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html)；换了一个 HHKB Pro 2 Type-S 键盘
-2016.08.30 | 使用Spring Boot+MySQL+jQuery+Bootstrap 参与开发了一个 ZooKeeper 网页管理工具；学习了 docker 的基本使用；了解了 JUnit+Mockito，CAS 认证，nginx 等相关知识；大致刷完了《Spring 3.x 企业开发实战》，并整理相关代码至 github 仓库 [spring-learning](https://github.com/brianway/spring-learning)
-2016.06.26 | 三门课结课，准备数学考试和图像课大作业([3D Rigid Object Tracking](http://brianway.github.io/2016/05/16/3D-Rigid-Object-Tracking/))，处理学校琐事；阅读《Spring 3.x 企业开发实战》至第六章；买了 Mac Pro 和 RealForce 静电容键盘，熟悉系统和软件
-2016.04.28 | 看了部分 solr 官方 reference guide；《lucene in action》读了一半；看完了《java 多线程编程核心技术》(高洪岩)，代码都自己实现了并整理上传到我的 github 仓库 [java-learning](https://github.com/brianway/java-learning)；刷完了 Coursera 上普林斯顿的算法课程["算法 Part I"](https://www.coursera.org/course/algs4partI);
-2016.03.08 | 学习 SpringMVC+MyBatis 的使用，整理了系列学习笔记博客近 40 篇(已发布 20 篇)，还被清华大学出版社编辑联系出书[(附图片)](http://7xph6d.com1.z0.glb.clouddn.com/%E9%9A%8F%E7%AC%94_%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E5%87%BA%E7%89%88%E7%A4%BE%E8%81%94%E7%B3%BB%E6%88%91.png)，感觉自己水平太菜，婉拒了。复习和巩固了 Java SE，入门了 Java Web 基础；并把学习笔记整理成系列博客发布在技术社区和自己的网站(升级到 jekyll 3.0.2)。准备开始学习 Spring 以及机器学习基本算法
-2016.01.08 | 开始接触网络爬虫，小 demo。调研主流爬虫，在 Eclipse 下开发修改 nutch 的 parser 插件；转投 intellj IDEA，学习 ant+ivy，maven，git 的基本使用,搭建 hadoop 环境；开始建立个人博客，github+jekyll，把 jekyll 官网通读了一遍  
+| 时间        | 历程         | 
+| ------------- |:-------------:|
+2017.03.20 | 学习了《ElasticSearch权威指南》，并使用ElasticSearch网上招投标数据进行聚合分析， 学完了Zookeeper Guider。
+2017.01.20 | 二刷《深入理解Java虚拟机》
+2016.10.30 | 读完了《图解http》，《敏捷软件开发》，《Head First 设计模式》，《Java 并发编程实战》,发表Spark Streaming 源码图解博客。
+2016.11.14 | 加入了一家在梦想小镇专注于大数据的创业公司,全面使用Hadoop,Hive,Spark,Kafka等技术。开始使用MacBook,提高了生产力。
+2016.11.14 | 在GitHub上搭建了个人博客。
+2016.01.26 | 开始学习Hadoop,Spark 看完了《Spark快速大数据分析》,自学北风网Spark从入门到精通。
+2015.12.23 | 开始接触Github 。Fork了第一个开源项目[蓝源后台管理系统](http://www.lanyuanoss.com/),从项目中学习Mybatis。
+2015.07.08 | 购买了第一台阿里云服务器,并买了自己的域名luoxuehuan.com 在服务器上搭建了应用与博客，然后碍于国内服务器需要备案。后购买香港云主机,500MB空间,利用php搭建了静态博客。
+2015.07.08 | 加入了第一家公司,专注Java后端开发,使用Spring MVC,Hibernate,Oracle,阅读完了《大型网站技术架构》《深入理解Java虚拟机》
+2015.04.08 | 在博客园写博客,开始阅读《Linux私房菜 基础学习篇》
+2015.11.11 | 开始学习《Head First Java》
+2015.11.24 | 开始接触Hadoop Spark 。
+2014.03.08 | 电子专业,加入无线电协会软件部，自学了C语言,C++  
 
 
-
-通过搭建这个静态博客，对git的基本用法更熟了，同时对jekyll的目录结构，文件作用大致了解了。  
 
 ---
 
