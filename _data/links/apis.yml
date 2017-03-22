@@ -8,5 +8,5 @@ items:
     url: http://docs.spring.io/spring/docs/current/javadoc-api/
   - text: Elasticsearch
     url: https://www.elastic.co/guide/index.html
-  - text: webmagic
-    url: http://code4craft.github.io/webmagic/docs/
+  - text: Spark
+    url: http://spark.apache.org/docs/latest/

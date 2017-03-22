@@ -1,8 +1,8 @@
 message: 常用工具
 items:
-  - text: 在线画图
-    url: https://www.processon.com/diagrams
-  - text: 海词
-    url: http://dict.cn/
-  - text: 七牛云
-    url: https://portal.qiniu.com
+  - text: 站长工具
+    url: http://tool.chinaz.com/Tools/Unicode.aspx
+  - text: 在线编程
+    url: https://www.shucunwang.com/RunCode/cpp/
+  - text: Json解析
+    url: http://json.cn/

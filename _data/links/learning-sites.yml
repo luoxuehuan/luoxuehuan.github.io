@@ -2,8 +2,8 @@ message: 学习网站
 items:
   - text: Coursera 
     url: https://www.coursera.org/
-  - text: ITeye 
-    url: http://www.iteye.com
+  - text: CSDN 
+    url: http://www.csdn.net
   - text: 并发编程网
     url: http://ifeve.com/
   - text: LeetCode
