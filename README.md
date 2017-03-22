@@ -18,11 +18,6 @@ Runing on Github + Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang/ga
 该网站使用的是[Gaohaoyang](https://github.com/Gaohaoyang/gaohaoyang.github.io)最新重构的主题
 
 
-## Sample
-
-
-![site-demo](assets/site-demo.png)
-
 
 
 ## My modification
