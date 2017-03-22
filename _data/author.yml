@@ -1,33 +1,33 @@
-name: brianway
-email: weichuyang@163.com
+name: luoxuehuan
+email: lxuehuan@gmail.com
 image: "/images/Jaina.jpg"
-simpleIntro: 我是「魏楚阳」，一个处在学习期的小白。
+simpleIntro: 我是「罗学焕」，持续前进的探索者。
 WebsiteIntro:
     <h2 id="welcome-to-my-website">Welcome to My Website</h2>
-    <p>This is the place where I share my ideas.You can also visit me on <a href="http://blog.csdn.net/h3243212/">@CSDN</a> or <a href="http://my.oschina.net/brianway">@oschina</a>.</p>
+    <p>This is the place where I share my ideas.You can also visit me on <a href="http://blog.csdn.net/lxhandlbb/">@CSDN</a> or <a href="http://my.oschina.net/hulb">@oschina</a>.</p>
     <p>Give Chapter and Verse and Author for Transshipment, copy or other using. Thanks!</p>
 
 community:
   - text: GitHub 
     pic:  "/images/github-icon.png"
-    link: https://github.com/brianway
+    link: https://github.com/luoxuehuan
   - text: oschina 
     pic:  "/images/oschina-icon.png"
-    link: http://my.oschina.net/brianway	
+    link: http://my.oschina.net/hulb
   - text: CSDN
     pic:  "/images/csdn-icon.png"
-    link: http://blog.csdn.net/h3243212/
+    link: http://blog.csdn.net/lxhandlbb
   - text: SegmentFault
     pic: "/images/segmentfault-icon.png"
-    link: http://segmentfault.com/blog/brianway
+    link: http://segmentfault.com/blog/luoxuehuan
 
 follow:
   - text: SinaWeibo
     pic: "/images/sinaweibo-icon.png"
-    link: http://weibo.com/brianway
+    link: http://weibo.com/luoxuehuan
   - text: Linkedin
     pic: "/images/linkedin-icon.png"
-    link: https://cn.linkedin.com/in/weichuyang
+    link: https://cn.linkedin.com/in/luoxuehuan
   - text: Renren
     pic: "/images/renren-icon.png"
-    link: http://www.renren.com/390148187
+    link: http://www.renren.com/luoxuehuan
