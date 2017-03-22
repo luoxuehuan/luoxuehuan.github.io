@@ -2,7 +2,7 @@
 layout: post
 title: Hibernate实现不带条件的简单分页查询
 date: 2015-08-19
-categories: blog
+categories: Hibernate
 tags: [Hibernate]
 description: Hibernate实现不带条件的简单分页查询
 ---

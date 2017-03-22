@@ -2,8 +2,8 @@
 layout: post
 title: Scala和Java二种方式实战Spark Streaming开发
 date: 2016-04-21
-categories: blog
-tags: [Spark]
+categories: Spark
+tags: Spark 入门教程
 description: Java和Scala的Spark实战
 ---
 

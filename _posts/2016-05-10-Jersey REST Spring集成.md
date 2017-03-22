@@ -1,3 +1,11 @@
+---
+layout: post
+title: Jersey REST Spring 集成开发
+date: 2016-05-10
+categories: Spring 
+tags: Spring Java
+---
+
 ##　1.web.xml中作如下配置：
 
 ```

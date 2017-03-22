@@ -2,7 +2,7 @@
 layout: post
 title: Java类共同的父类Object
 date: 2015-04-02
-categories: blog
+categories: Java
 tags: [Java基础]
 description: 简单的介绍java
 ---

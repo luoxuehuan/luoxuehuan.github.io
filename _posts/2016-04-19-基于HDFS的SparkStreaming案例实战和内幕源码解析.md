@@ -2,8 +2,8 @@
 layout: post
 title: 基于HDFS的SparkStreaming案例实战和内幕解析
 date: 2016-04-19
-categories: blog
-tags: [Spark]
+categories: Spark
+tags:  Spark 源码解析
 description: Spark实战
 ---
 

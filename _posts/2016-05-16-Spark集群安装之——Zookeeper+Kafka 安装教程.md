@@ -1,3 +1,10 @@
+---
+layout: post
+title: Zookeeper+Kafka安装教程
+date: 2016-05-16
+categories: Zookeeper Kafka
+tags: Zookeeper Kafka 大数据
+---
 # 1、安装和配置Zookeeper
 
 ## 1)	下载Zookeeper

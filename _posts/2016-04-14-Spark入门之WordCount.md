@@ -1,3 +1,12 @@
+---
+layout: post
+title: Spark入门之WordCount
+date: 2016-03-17
+categories: Spark
+tags: 入门教程
+description: 
+---
+
 ```
 package com.core
 
