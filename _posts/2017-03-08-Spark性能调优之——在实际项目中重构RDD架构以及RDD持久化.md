@@ -1,4 +1,17 @@
 
+---
+layout: post
+title: spark调优-重构RDD 以及RDD的持久化
+date: 2015-03-08
+categories: Spark 
+tags: spark调优
+comments: true
+description: spark调优
+---
+* content
+{:toc}
+
+介绍了Spark RDD 调优方面的知识
 
 ### 一、RDD架构重构与优化是什么。
 

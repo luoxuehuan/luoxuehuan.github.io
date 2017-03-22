@@ -14,7 +14,7 @@ icon: heart
 
 
 
-大数据工程师一枚，主要技能Spark,Hadoop,Scala，就职于一家专注于大数据服务的创业公司——[数澜科技](www.dtwave.com)。
+大数据工程师一枚，主要技能Spark,Hadoop,Scala，就职于一家专注于大数据服务的创业公司——[数澜科技](https://www.dtwave.com)。
 爱技术，爱吹逼，热爱生活。
 
 
