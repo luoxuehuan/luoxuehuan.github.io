@@ -1,3 +1,18 @@
+---
+layout: post
+date:   2017-03-08 21:44:07 +08:00
+category: 分布式系统 Spark
+tags: Spark调优 Kafka
+comments: true
+---
+* content
+{:toc}
+
+使员工fastutil优化数据格式
+
+
+
+
 ### 一、fastutil介绍：
 
 fastutil是扩展了Java标准集合框架（Map、List、Set；HashMap、ArrayList、HashSet）的类库，提供了特殊类型的map、set、list和queue；
