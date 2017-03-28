@@ -8,8 +8,14 @@ comments: true
 ---
 * content
 {:toc}
+es集群设计
 
-资料汇总（持续更新）
+
+
+
+
+
+
 ## es集群设计
 
 | 节点       | CPU        | 内存   | 硬盘  | 备注  |
