@@ -1,0 +1,59 @@
+---
+layout: post
+title:  资料整理
+date:   2017-03-27 21:44:07 +08:00
+category: 分布式系统
+tags: Java
+comments: true
+---
+* content
+{:toc}
+
+资料汇总（持续更新）
+
+
+
+
+
+
+
+
+## 源码解析
+
+
+## 成长经验
+[数据科学领域的职位划分以及职责技能](https://mp.weixin.qq.com/s?__biz=MzI2MjE0MDUzNg==&mid=2652915887&idx=1&sn=020eb8cb55830821057a20534111e097&chksm=f19b4fb8c6ecc6aeae5c43eae8fe659fd62682c882702ac9580785e255fdfe1b5a67fe8cb432&scene=0&key=98e307ee25a850818cddef5f2288019ef4dc69411f68f1150a1fd6840238a0b3043583d5880e342756373664787c479f4a8e3ea9cd998e5b40060d3967d849b38f5758353f42901feb2bce03216d6661&ascene=0&uin=NDg0NzU1NTYw&devicetype=iMac+MacBookAir7%2C2+OSX+OSX+10.11.6+build(15G31)&version=12020010&nettype=WIFI&fontScale=100&pass_ticket=Wc4e5KPiwOAwkMs8O7TKn8lNARHihzLrvLCJ5oOGe10MRiWOvleuCUCb0ZxU1Pe5)
+
+[数学是成就卓越开发人员的必备技能](https://mp.weixin.qq.com/s?__biz=MzI1MTIzMzI2MA==&mid=2650560543&idx=1&sn=03950daf4b3649cd4625d0956d233589&chksm=f1feee9cc689678a197163c29dda99f8442ea5286049bf5ec6ad5b2bf4ae2a24f266428b04fa&scene=0&key=b616414e1e7508d087704635b55bcc6fe3ac4b63b5ca8b5f3025ef124e79032130d0265da4bb943cd42e7de253bdd6401f7108539b3319189335f0ce71f59e8316c4670b65e71a896f4bde523bcb9eb0&ascene=0&uin=NDg0NzU1NTYw&devicetype=iMac+MacBookAir7%2C2+OSX+OSX+10.11.6+build(15G31)&version=12020010&nettype=WIFI&fontScale=100&pass_ticket=Wc4e5KPiwOAwkMs8O7TKn8lNARHihzLrvLCJ5oOGe10MRiWOvleuCUCb0ZxU1Pe5)
+
+[面试感悟：3 年工作经验程序员应有的技能](https://mp.weixin.qq.com/s?__biz=MjM5OTA1MDUyMA==&mid=2655437479&idx=2&sn=0fc3ec150d8353d68bf5330da1567ecf&chksm=bd730ed08a0487c650de9e7fd1b8802fb05bb36fe16b277731b3937f9f4e6fcfe18fe2312510&mpshare=1&scene=24&srcid=1218xKAQPjkVyjnjcYSwLVJH&key=9507611c0d28ec9362dd6b11c5954667a6fe6e3ecf1853713816904bdc6f92b5d0d8e68cb0229f4189953dd5f831e05c0646b1ecd3cc1234ce082cd55ac2009df4a58f9336a4fbb14ac5a8f5b8854669&ascene=0&uin=NDg0NzU1NTYw&devicetype=iMac+MacBookAir7%2C2+OSX+OSX+10.11.6+build(15G31)&version=12020010&nettype=WIFI&fontScale=100&pass_ticket=Wc4e5KPiwOAwkMs8O7TKn8lNARHihzLrvLCJ5oOGe10MRiWOvleuCUCb0ZxU1Pe5)
+
+[入职阿里巴巴数据分析师——我的10个关键转折点](https://mp.weixin.qq.com/s?__biz=MzA5MzY4NTQwMA==&mid=2650995342&idx=1&sn=852efe868c8cc1969a20c29ec124d745&scene=0&key=98e307ee25a850818b498ba16b8fbabcdaf61f1b4fb1f08a912fce6707c75a3315bd697214f176774c20bcf006a29b3b64f081b00d588be963764f3713ec40866fcdf945ce56467690f8de8855a68e23&ascene=0&uin=NDg0NzU1NTYw&devicetype=iMac+MacBookAir7%2C2+OSX+OSX+10.11.6+build(15G31)&version=12020010&nettype=WIFI&fontScale=100&pass_ticket=Wc4e5KPiwOAwkMs8O7TKn8lNARHihzLrvLCJ5oOGe10MRiWOvleuCUCb0ZxU1Pe5)
+
+[【下班后001】下班后两小时，决定你将会成为怎样的人](http://www.jianshu.com/p/769d89498770?utm_campaign=maleskine&utm_content=note&utm_medium=mobile_all_hots&utm_source=recommendation)
+
+[月薪3万的程序员都避开了哪些坑](https://mp.weixin.qq.com/s?__biz=MzA5MzY4NTQwMA==&mid=400052979&idx=1&sn=bc148578ec96d2fffda570b5a90be71e&scene=0&key=cf6d53a5ce4ed0a37a7d7acd45c8e53386952a71bd18b31618e519c3c88578c815278db78ab82fc0e3d20d6d8028e872d7c6ba407897ef2e9f650dfb17581bda4b34f8d46446c353e05dbf615d757a64&ascene=0&uin=NDg0NzU1NTYw&devicetype=iMac+MacBookAir7%2C2+OSX+OSX+10.11.6+build(15G31)&version=12020010&nettype=WIFI&fontScale=100&pass_ticket=Wc4e5KPiwOAwkMs8O7TKn8lNARHihzLrvLCJ5oOGe10MRiWOvleuCUCb0ZxU1Pe5)
+## 学习资料
+[spark2.x](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/content/)
+
+[10个sql注入工具](https://mp.weixin.qq.com/s?__biz=MzA4MjEyNTA5Mw==&mid=2652564639&idx=1&sn=3432f4b6612978d8fc0a73af67b435f1&chksm=8464c4d5b3134dc39a16f3b9b591d30e68004ea963613f6af24659c962d5ac93699384a1c93c&scene=0&key=03334b3a7658f4473a509b41b3933fe023a9e58cc6eb6334d2ff72e4016a49b0f765f68d096cb2fb3eef48966d0d6ad562ff4aa790ebc889879f797b2234267a453369c99c90df85d958d32fd5513f78&ascene=0&uin=NDg0NzU1NTYw&devicetype=iMac+MacBookAir7%2C2+OSX+OSX+10.11.6+build(15G31)&version=12020010&nettype=WIFI&fontScale=100&pass_ticket=Wc4e5KPiwOAwkMs8O7TKn8lNARHihzLrvLCJ5oOGe10MRiWOvleuCUCb0ZxU1Pe5)
+
+[机器学习公式大全](https://mp.weixin.qq.com/s?__biz=MjM5ODIzNDQ3Mw==&mid=2649966624&idx=1&sn=48e4d8150b73c4bfd3353cd6fe3a5bb3&chksm=beca382689bdb13020acde1eeb86deb7ea777b2f19f744858ed6d41d006a5ef71bd17eadb103&scene=0&key=03334b3a7658f4479dce6321eac0ba0279eb9827b07e26434b5ccd74306eb3eaac0bebacd4c648b8d24a9b1acbbf737ad96b053f064f6934d47bf6991a4ace1f580c017d6d901ece5301000c195e5478&ascene=0&uin=NDg0NzU1NTYw&devicetype=iMac+MacBookAir7%2C2+OSX+OSX+10.11.6+build(15G31)&version=12020010&nettype=WIFI&fontScale=100&pass_ticket=Wc4e5KPiwOAwkMs8O7TKn8lNARHihzLrvLCJ5oOGe10MRiWOvleuCUCb0ZxU1Pe5)
+
+[［转］轻松看懂机器学习十大常用算法](https://mp.weixin.qq.com/s?__biz=MjM5ODIzNDQ3Mw==&mid=2649966347&idx=1&sn=a3d50df0481982a3d212377780316f01&chksm=beca370d89bdbe1bc381d24b0cb2b40e3c58a8e1a532b3c141986edfcbc204eb24b52d45d25b&scene=0&key=03334b3a7658f4477c814d0e514de3bbd019016282b79b4a069738bf5846a779256c46666b7d7dc34f20245a12010d1e1b040d75df69d2f03c009bc4d217d3c6b524c063567525453243985efcf87faf&ascene=0&uin=NDg0NzU1NTYw&devicetype=iMac+MacBookAir7%2C2+OSX+OSX+10.11.6+build(15G31)&version=12020010&nettype=WIFI&fontScale=100&pass_ticket=Wc4e5KPiwOAwkMs8O7TKn8lNARHihzLrvLCJ5oOGe10MRiWOvleuCUCb0ZxU1Pe5)
+
+[Hadoop大数据平台运维工程师须掌握的基本命令集分享](https://mp.weixin.qq.com/s?__biz=MzA4Mzc0NjkwNA==&mid=206034131&idx=2&sn=be478de9cef0979040fbf096f2ab0e69&key=03334b3a7658f4477d0aa7b48441d92205abfd0b8d44248abccdc7dcdab96119798a59c5e20ebb94f0abb1002b0e223399d71cc39938e1448cc3eaaddaf56f67a86ca3d8182155b60abf5224ea0c72e4&ascene=0&uin=NDg0NzU1NTYw&devicetype=iMac+MacBookAir7%2C2+OSX+OSX+10.11.6+build(15G31)&version=12020010&nettype=WIFI&fontScale=100&pass_ticket=Wc4e5KPiwOAwkMs8O7TKn8lNARHihzLrvLCJ5oOGe10MRiWOvleuCUCb0ZxU1Pe5)
+## 架构解析
+[解析阿里云分布式调度系统伏羲](https://mp.weixin.qq.com/s?__biz=MzA4Mzc0NjkwNA==&mid=2650782174&idx=1&sn=60c826e0050662a5b8ab05ef6179ec53&chksm=87fad0e9b08d59ffe270e2b5b3c0a73aff9dce282bdde63070f3a6a425631a4cf6ecb163d459&scene=0&key=2061eaf6dccf8e339cef9f3aeffdb7180c3fbaf1663ad9b679cd6f6166953d546d6a9409661eea96df4cc6d3473feb55a42e16bfc83b9c52e0f092bf2ccfd5d32e9ef558ddaffa8f9e1e1ee83e67ee69&ascene=0&uin=NDg0NzU1NTYw&devicetype=iMac+MacBookAir7%2C2+OSX+OSX+10.11.6+build(15G31)&version=12020010&nettype=WIFI&fontScale=100&pass_ticket=Wc4e5KPiwOAwkMs8O7TKn8lNARHihzLrvLCJ5oOGe10MRiWOvleuCUCb0ZxU1Pe5)
+
+[秒杀系统的架构解决之道](https://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&mid=2659599004&idx=1&sn=25247a79ad7dcb1ae92551dff19de172&chksm=8be9978ebc9e1e984a7e52619ad75d328f183c85bf28a6d73f7cb4e3ec45f1a74a89fe1116b4&scene=0&key=cf6d53a5ce4ed0a34ba11e3f416bb2c1596688694decae475591aa83eba72758482c0e59ea43e3a5c48c7c1a98070849a0bd8c62f900f95eb0845dfd5fcc3f6501df4a2676a30d440b87fb055ac4d3ba&ascene=0&uin=NDg0NzU1NTYw&devicetype=iMac+MacBookAir7%2C2+OSX+OSX+10.11.6+build(15G31)&version=12020010&nettype=WIFI&fontScale=100&pass_ticket=Wc4e5KPiwOAwkMs8O7TKn8lNARHihzLrvLCJ5oOGe10MRiWOvleuCUCb0ZxU1Pe5)
+
+## 实践
+
+[基于 Kafka 和 ElasticSearch，LinkedIn是如何构建实时日志分析系统的？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2650995190&idx=1&sn=2832f60b8d5c8ef1be7af942bbc17324&chksm=bdbf01a58ac888b3165e77423adda4046ffc12f072146c87e30790712ef8a4ec3545b7cc5a6d&scene=0&key=03334b3a7658f447900f5e48bbfa5847c53d1dba34d58d561cd8de225c2a12d99ae90ea0b305e09665688ef6124df0ea61f235ca1c16575d12e9c0fb3e2c17aa97063b324b8be50f68f973ec9fd91c75&ascene=0&uin=NDg0NzU1NTYw&devicetype=iMac+MacBookAir7%2C2+OSX+OSX+10.11.6+build(15G31)&version=12020010&nettype=WIFI&fontScale=100&pass_ticket=Wc4e5KPiwOAwkMs8O7TKn8lNARHihzLrvLCJ5oOGe10MRiWOvleuCUCb0ZxU1Pe5)
+
+[Spark在GrowingIO数据无埋点全量采集场景下的实践](http://b865a395.fromwiz.com/share/s/2Upqel3Vs45O2q1eTZ1wyr_O3EMH9g3lPkDc2RRjOL1eCP4_)
+
+----
+
+> 作者[@luoxuehuan](http://luoxuehuan.github.io/)更多文章：[个人网站](http://luoxuehuan.github.io/) `|` [CSDN](http://blog.csdn.net/lxhandlbb/) `|` [oschina](http://my.oschina.net/brianway)

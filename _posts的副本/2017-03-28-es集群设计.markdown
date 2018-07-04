@@ -1,0 +1,139 @@
+---
+layout: post
+title:  es集群设计
+date:   2017-03-28 16:21:07 +08:00
+category: 搜索
+tags: ElasticSearch
+comments: true
+---
+* content
+{:toc}
+es集群设计
+
+
+
+
+
+
+
+## es集群设计
+
+| 节点       | CPU        | 内存   | 硬盘  | 备注  |
+| --------- |:---------:|:------|:---------:|----:| 
+| master101     | 4 | 16G | 2T| client|
+| node102      | 4 | 16G | 2T|   master|
+| node103      | 4 | 16G | 2T| datanode|
+| node104      | 4 | 16G | 2T| datanode|
+| node105      | 4 | 16G | 2T| datanode|
+| node106      | 4 | 16G | 2T| datanode|
+| node107      | 4 | 16G | 2T| datanode|
+| node108      | 4 | 16G | 2T| datanode|
+
+
+## 基础信息
+
+- 百亿文档
+- 每条文档预估 
+- 哪些字段需要做分词倒排
+- 主要要求为搜索
+
+
+## 集群搭建考虑因素
+
+- **Shard的数量**：不是越多越好，取决于集群data node的数量，设置成和data node数量一致，或者倍数即可，但shard数量太多也不行，可能会有反作用，降低性能。
+- **master node**的数量，可用性要求高的话至少要3个，多了没坏处。重点是设置discovery.zen.minimum_master_nodes这个参数为(number of master-eligible nodes / 2) + 1，避免集群在master node挂掉的时候出现脑裂(Split Brain)。
+- 多个data node可以分配在一台机器，但不建议这么做，除非你的机器非常强大，有很多cpu内核和超级多的内存（比如几百GB）导致跑一个data node比较浪费。 主要的问题是集群规模大了以后管理上会有一些不便，比如要记得设置cluster.routing.allocation.same_shard.host: true，防止同一个shard的primary和replica分配到同一台机器（原因是这台机器挂了，primary/replica可能同时不可用，丧失了HA）。
+- **硬盘**： 几个硬盘
+- **datanode**：ES的data node除了放数据以外，也可以兼任master和client的角色，多数同学会将这些角色混入到data node。如果将master和client独立出来，一旦出现问题，重启后几乎是瞬间就恢复的，对用户几乎没有任何影响。另外将这些角色独立出来的以后，也将对应的计算资源消耗从data node剥离出来，更容易掌握data node资源消耗与写入量和查询量之间的联系，便于做容量管理和规划。
+- master
+- replica
+- 一些参数配置
+- **rebalance**:调大等待时间
+- 初始化unsigned shard
+- 索引数
+- **shard分片数**：在写入量和查询性能能够满足的前提下，为索引分配尽量少的分片。分片过多会带来诸多负面影响过多的shard也带来更多小的segment，而过多的小segment会带来非常显著的heap内存消耗，特别是如果查询线程配置得很多的情况下.`Elastic 官方文档建议：一个 Node 最好不要多于三个 shards。`
+- **磁盘使用的百分比配额**,举个例子，如果有一个1TB的硬盘，分片是典型的10GB大小，那么理论上可以在该节点上分配100个分片。在默认设置的情况下，只能分配80个分片到该节点上，之后ES就认为这个节点已经满了。 
+- **冷热数据**最好做分离
+- **内存：** `官方建议的heap size不要超过系统可用内存的一半,并且不要超过32GB,heap以外的内存并不会被浪费，操作系统会很开心的利用他们来cache被用读取过的段文件。`JVM heap分配不能超过32GB，对于我们128GB RAM, 48TB磁盘空间的机器而言，如果只跑一个ES实例，只能利用到32GB不到的heap，实际使用下来，由于冷数据搜索频率不高，也没有写入，即时只剩余35GB内存给os做文件系统缓存，查询性能还是可以满足需求的。
+- **索引速度**:遇到 Elasticsearch 升级后索引速度很慢，查下来是新版 IK 分词的问题，修改分词插件后得到解决。减少碎片也可以提高索引速度，每天进行优化还是很有必要的。在初次索引的时候，把 replica 设置为 0，也能提高索引速度。
+- **SSD**:效果明显。
+
+- **内存调优**：
+```
+1.  segment memory:一个segment是一个完备的lucene倒排索引
+2.  filter cache
+3.  field data cache
+4.  bulk queue
+5.  indexing buffer
+6.  state buffer
+7.  超大搜索聚合结果集的fetch
+```
+
+- **Segment memory大小和Segment的数量**。节点上存放的索引较多的时候，这两个指标就值得关注，要知道segment memory是常驻heap不会被GC回收的，因此当heap压力太大的时候，可以结合这个指标判断是否是因为节点上存放的数据过多，需要扩容。
+
+
+## 注意事项
+
+- 防止同一个shard的primary和replica分配到同一台机器
+- 监控：有精力折腾的，利用ES各种丰富的stats api，用自己熟悉的监控工具采集数据，可视化出来就好了。
+- 数据汇聚节点:ES是分布式搜索引擎，搜索和聚合计算除了在各个data node并行计算以外，还需要将结果返回给汇总节点进行汇总和排序后再返回。
+- **Range 查询**，严重的时候会导致集群 shard 自动下线,建议在最热的查询中避免使用 Range 查询。
+- **当心DELETE _all** :设置action.destructive_requires_name:true来禁用了它。 
+
+
+
+## 优化
+
+- **routing**。大型的本地分类网站中，城市、类目也是一个不错的维度
+
+- **分合**:分别（索引和routing）查询和合并（索引和routing）查询，即此分合的意思。
+
+- **分索引**:索引越来越大，单个 shard 也很巨大，查询速度也越来越慢:选择分索引还是更多的shards？更多的 shards 会带来额外的索引压力，即 IO 压力。我们选择了**分索引**。比如按照每个大分类一个索引，或者主要的大城市一个索引。然后将他们进行合并查询..小城市的索引，我们使用城市做 routing
+- **max_num_segments**:虽然优化时间会变长，但是在高峰期前能完成的话，会对查询性能有很大好处。
+- **JVM 32G** 如果单机内存很大，配多个 JVM instance，较小的 heapsize（如32G）[Don’t Cross 32 GB](https://www.elastic.co/guide/en/elasticsearch/guide/current/heap-sizing.html#compressed_oops)
+
+## 附录
+
+- 我们经历过20G -> 100G -> 200G -> 500G -> 1T这样的过程，集群的data node从最初的4个扩容到现在的20个。
+- 目前每天处理50亿条裸日志，产生的主索引1.5TB，业务繁忙期间，每秒处理8-10万条日志，历史数据保留10天。
+
+
+
+## Q&A
+
+- 生产环境服务器如何配置性价比较高？单机CPU核数、主频？内存容量？磁盘容量？
+	
+		内存大一些，CPU 多核是必要的，JVM 和 Elasticsearch 会充分使用内存和多核的。 
+		关于内存容量的问题，很多是 JVM Tunning 的问题。 磁盘容量没啥要求。
+
+- SSD性能提升多少？
+
+		SSD 对索引帮助非常大，效果当当的，提高几十倍应该是没问题。不过，我们没有试过完全使用SSD顶查询，而是使用内存，内存性价比还是不错的。
+
+- Elasticsearch适合做到10亿级数据查询，每天千万级的数据实时写入或更新吗？
+
+		10亿是可以做到的，如果文档轻量，10亿所占的资源还不是很多。ELK 使用 Elasticsearch ，进行日志处理每天千万是小case吧？不过我们除了使用 ELK 进行日志处理，还进行业务处理，10亿级快速查询是可以做到，不过，需要做一些工作，比如索引和shards的分分合合：）
+
+## 别人家的配置
+- 提问：15台机器，日志量200G左右，集群规模多大合适？一个redis够么？es1个节点的话，内存给多大合适？
+
+- 一个redis够了，这个量ES估计需要4个data node，单机内存最好>=64GB，ES的heap分配20-30GB足够。
+
+
+[3千万数据，如何设计集群](http://elasticsearch.cn/question/103)
+
+
+1. 首先，节点的内存分配的太少了，ES其实很占内存，大部分的操作都是建立在内存足够的基础上，你的数据量应该在150G-200G左右，我觉得可以把内存调整到10G左右。
+2. 索引过程中，分词会对索引速度有所影响，建议你可以优化一下你的mapping，不必要的就不必分词，甚至不必设成可搜索的了。
+3. 多index还是多type需要根据你的情况来分析，如果你需要实现多租户，那必须多index来实现。数据量过的话，可以按时间分成多个indics，需要的话，还可以给这些indics添加别名。
+4. 分片和副本的设计，应该根据节点数来调整，正常情况下 节点数= （副本数+1）*分片数，若是你希望提高搜索性能，可是适当提高副本数。
+
+
+## 参考资料
+
+[paypal](https://www.paypal-engineering.com/2016/08/10/powering-transactions-search-with-elastic-learnings-from-the-field/)
+
+[Day1: 大规模Elasticsearch集群管理心得](http://elasticsearch.cn/article/110)
+
+[ 亿级规模的Elasticsearch优化实战](http://blog.csdn.net/opensure/article/details/47617437)
+[翻译新闻 配置高性能 ElasticSearch 搜索引擎集群的9个小贴士](http://www.iteye.com/news/32033)
