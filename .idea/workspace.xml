@@ -96,8 +96,8 @@
         <entry file="file://$PROJECT_DIR$/_posts的副本/2016-05-23-Spring MVC 配置详解.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="244">
-                <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+              <first_editor relative-caret-position="304">
+                <caret line="38" column="30" lean-forward="false" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -342,7 +342,7 @@
       <workItem from="1511504463933" duration="2710000" />
       <workItem from="1511770633976" duration="235000" />
       <workItem from="1511773961647" duration="2130000" />
-      <workItem from="1530716575770" duration="2059000" />
+      <workItem from="1530716575770" duration="2664000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1511504782218</created>
@@ -379,11 +379,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530719289265</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit">
+      <created>1530719494672</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1530719494672</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7134000" />
+    <option name="totallyTimeSpent" value="7739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -942,8 +949,8 @@
     <entry file="file://$PROJECT_DIR$/_posts的副本/2016-05-23-Spring MVC 配置详解.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="244">
-            <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <first_editor relative-caret-position="304">
+            <caret line="38" column="30" lean-forward="false" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
             <folding />
           </first_editor>
           <second_editor />
