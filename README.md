@@ -11,7 +11,7 @@ You can see the Site by clicking [here](http://luoxuehuan.github.io/)
 Runing on Github + Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang/gaohaoyang.github.io)
 
 
-这是我的个人网站，基于jekyll。**如果觉得不错，请先在这个仓库上点个star吧**，这也是对我的肯定和鼓励，谢谢了。
+这是我的个人网站，基于jekyll。**如果觉得不错，请先在这个仓库上点个star吧**，这也是对我的肯定和鼓励，谢谢了。更新时间2022.1.20
 
 我的个人网站地址: [Hulb's Personal Website](http://luoxuehuan.github.io/)
 
